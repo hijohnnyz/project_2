@@ -14,8 +14,11 @@ from flask import Flask, jsonify, render_template
 # Database Setup
 #################################################
 app = Flask(__name__)
-engine = sqlalchemy.create_engine("mysql://root:pigsty214@localhost")
-uri = "mysql://root:pigsty214@localhost/natural_disasters"
+
+engine = sqlalchemy.create_engine("sqlite:///db.sqlite")
+
+uri = "sqlite:///db.sqlite"
+
 app.config["SQLALCHEMY_DATABASE_URI"] = uri
 db = SQLAlchemy(app)
 
