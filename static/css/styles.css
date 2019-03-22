@@ -1,0 +1,13 @@
+body {
+    background-image: url("../images/dis.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+h1 {
+    text-align: center;
+    letter-spacing: 10px;
+    font-weight: bold;
+    color: lightgreen;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Number of Injuries</title>
+   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+   <select id="selDataset" onchange="getData(this.value)">
+         <option value="All natural disasters">All Natural Disasters</option>
+         <option value="Extreme weather">Extreme Weather</option>
+         <option value="Flood">Flood</option>
+         <option value="Earthquake">Earthquake</option>
+         <option value="Volcanic activity">Volcano</option>
+         <option value="Wildfire">Wildfire</option>
+         <option value="Extreme temperature">Extreme Temperature</option>
+         <option value="Landslide">Landslide</option>
+         <option value="Mass movement (dry)">Mass Movement</option>
+         <option value="Drought">Drought</option>
+   </select>
+   <div id="injuries" style="height:650px; width:1250px"></div>
+   <script src="../static/js/injuries_data.js"></script>
+   <script src="../static/js/injury_plot.js"></script>
+</body>
+</html>
