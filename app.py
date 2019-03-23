@@ -68,5 +68,10 @@ def injuries():
     """Render HTML"""
     return render_template("injuries.html")
 
+@app.route("/migration")
+def migration():
+    """Render HTML"""
+    return render_template("migration.html")
+
 if __name__ == "__main__":
     app.run(debug=True)
